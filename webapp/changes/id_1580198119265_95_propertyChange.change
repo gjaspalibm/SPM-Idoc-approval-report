@@ -1,0 +1,35 @@
+{
+	"fileName": "id_1580198119265_95_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"reference": "mmal.spm.fi.zspm_idoc_appr_rpt.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "useExportToExcel",
+		"newValue": true
+	},
+	"selector": {
+		"id": "mmal.spm.fi.zspm_idoc_appr_rpt::sap.suite.ui.generic.template.ListReport.view.ListReport::ZSPM_C_IDOCAPPR_RPT--listReport",
+		"type": "sap.ui.comp.smarttable.SmartTable",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mmal.spm.fi.zspm_idoc_appr_rpt/changes/",
+	"creation": "2020-01-28T07:55:24.438Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.52.37"
+	},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	}
+}

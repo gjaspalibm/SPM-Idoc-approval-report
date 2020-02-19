@@ -1,0 +1,47 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='ECC')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='ECC')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='ECC')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zspm_idoc_appr_rpt_srv/$metadata"><edmx:Include Namespace="ZSPM_IDOC_APPR_RPT_SRV" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zspm_idoc_appr_rpt_anno_mdl.v1">
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_C_IDOCAPPR_RPTType/waers"><Annotation Term="UI.HiddenFilter"/><Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_C_IDOCAPPR_RPTType/appr_name"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_C_IDOCAPPR_RPTType/to_StatusText"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_C_IDOCAPPR_RPTType/to_UserName"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_C_IDOCAPPR_RPTType">
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="docnum"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="mestyp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netpr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_status"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="cr_tmstp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_tmstp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_name"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="remarks"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="docnum"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="mestyp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netpr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_status"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="cr_tmstp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_tmstp"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="appr_name"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>appr_status</PropertyPath>
+						<PropertyPath>cr_tmstp</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="ZSPM_IDOC_APPR_RPT_SRV.ZSPM_I_APPR_TEXTType/language"><Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/><Annotation Term="UI.Hidden"/></Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
